@@ -1,0 +1,15 @@
+.logbtn{
+    padding: 16px 30px;
+    line-height: 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: inline-block;
+    @include mq(sm){
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    @include mq(xs){
+        padding: 10px 15px;
+    }
+}

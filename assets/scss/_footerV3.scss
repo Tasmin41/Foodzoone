@@ -1,0 +1,82 @@
+.footerV3 {
+    .footer-part-1 {
+      .row {
+        h5 {
+          color: $thmV3;
+        }
+      }
+      .media-buttons {
+        a {
+          border: 1px solid $thmV3;
+          i {
+            color: $thmV3;
+          }
+          &:hover {
+            background-color: $thmV3;
+            i {
+              color: $white-dark;
+            }
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &:hover {
+          color: $thmV3;
+          a {
+            color: $thmV3;
+          }
+        }
+      }
+    }
+    .customer-support,
+    .address,
+    .link,
+    .open-hour {
+      ul {
+        li {
+          &:hover {
+            color: $thmV3 !important;
+            a {
+              color: $thmV3 !important;
+            }
+          }
+        }
+      }
+    }
+    .address {
+      ul {
+        li {
+          i {
+            color: $thmV3;
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &:hover {
+          color: $thmV3 !important;
+          a {
+            color: $thmV3 !important;
+          }
+          &::marker {
+            color: $thmV3;
+          }
+        }
+      }
+    }
+    .subscribe {
+      p {
+        color: $thmV3;
+      }
+      .input-group {
+        height: 60px;
+        @include normalInpt($thmV3, $white-dark);
+        max-width: 400px;
+        border: 1px solid $thmV3 !important;
+      }
+    }
+  }
+  

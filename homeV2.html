@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee Shop Home</title>
+        <!--all css-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css" />
+        <link rel="stylesheet" href="assets/css/font-awesom/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/odometer.css" />
+        <link rel="stylesheet" href="assets/css/spacing.css" />
+        <link rel="stylesheet" href="assets/css/nice-select.css" />
+        <link rel="stylesheet" href="assets/css/aos.css" />
+        <link rel="stylesheet" href="assets/css/magnific.css" />
+        <link rel="stylesheet" href="assets/css/data-table.css" />
+        <link rel="stylesheet" href="assets/css/meanmenu.css" />
+        <!-- <link rel="stylesheet" href="assets/css/nouislider.min.css" /> -->
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <header class="header headerV2">
+            <div class="container">
+                <div class="rowt v-center">
+                    <div class="header-item item-left">
+                        <div class="logo">
+                            <img src="assets/img/coffeeHome/logo.png" alt="logo" />
+                        </div>
+                    </div>
+                    <!-- menu start here -->
+                    <div class="header-item item-center">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="menu-main">
+                                <li class="menu-item-has-children">
+                                    <a href="#">home <i class="fas fa-angle-down"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home V1</a></li>
+                                            <li><a href="homeV2.html">home V2</a></li>
+                                            <li><a href="homeV3.html">home v3</a></li>
+                                            <li><a href="homeV4.html">home v4</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Food Menu <i class="fas fa-angle-down"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="foodMenu.html">Food Menu V1</a></li>
+                                            <li><a href="foodMenuV2.html">Food Menu V2</a></li>
+                                            <li><a href="platerMenu.html">Platter Menu</a></li>
+                                            <li><a href="foodDetails.html">Food Details</a></li>
+                                            <li><a href="status.html">Order Status</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="gallery.html">Gallery</a></li>
+                                            <li><a href="testimonial.html">Testimonial</a></li>
+                                            <li class="dropdown menu-item-has-children"><a href="#">Chef <i class="fa-solid fa-angle-right"></i></a>
+                                                <div class="d-subMenu sub-menu">
+                                                    <ul>
+                                                        <li><a href="chef.html">Chef</a></li>
+                                                        <li><a href="chefDetails.html">Chef Details</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown menu-item-has-children"><a href="#">Blog <i class="fa-solid fa-angle-right"></i></a>
+                                                <div class="d-subMenu sub-menu">
+                                                    <ul>
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="blogDetails.html">Blog Details</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown menu-item-has-children"><a href="#">Shop <i class="fa-solid fa-angle-right"></i></a>
+                                                <div class="d-subMenu sub-menu">
+                                                    <ul>
+                                                        <li><a href="shop.html">Shop V1</a></li>
+                                                        <li><a href="shopV2.html">Shop V2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="profile.html">My Profile</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="checkout.html">Checkout</a></li>
+                                            <li><a href="error.html">Error</a></li>
+                                            <li><a href="comingSoon.html">Coming Soon</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                    <div class="sub-menu mega-menu mega-menu-column-6">
+                                        <div class="shape1">
+                                            <img src="assets/img/coffeeHome/shape1.png" alt="maskleft" />
+                                        </div>
+                                        <div class="shape2">
+                                            <img src="assets/img/coffeeHome/shape2.png" alt="maskright" />
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Thai & Chinese</h4>
+                                            <ul>
+                                                <li><a href="#">BBQ Pork.</a></li>
+                                                <li><a href="#">Fried Calamari.</a></li>
+                                                <li><a href="#">Thai Fried Chicken Wings.</a></li>
+                                                <li><a href="#">Thai Certified Angus Beef </a></li>
+                                                <li><a href="#">Wonton Soup with BBQ Pork.</a></li>
+                                                <li><a href="#">Tom Yum Noodle Soup</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Indian Food</h4>
+                                            <ul>
+                                                <li><a href="#">Aloo gobi</a></li>
+                                                <li><a href="#">Butter chicken.</a></li>
+                                                <li><a href="#">Chana masala.</a></li>
+                                                <li><a href="#">Palak paneer</a></li>
+                                                <li><a href="#">Chicken tikka masala</a></li>
+                                                <li><a href="#">Crisp papadum</a></li>
+                                                <li><a href="#">Haydrabad Biriany</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Desert Item</h4>
+                                            <ul>
+                                                <li><a href="#">Cream Brulee </a></li>
+                                                <li><a href="#">Mochi ( JAPAN)</a></li>
+                                                <li><a href="#">Apple Pie (USA)</a></li>
+                                                <li><a href="#">Gulab Jamun (INDIA)</a></li>
+                                                <li><a href="#">Pakhlava (TURKEY)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Fast Food</h4>
+                                            <ul>
+                                                <li><a href="#">McDonald's Fry</a></li>
+                                                <li><a href="#">KFC Fry</a></li>
+                                                <li><a href="#">Blizzard Dairy Queen</a></li>
+                                                <li><a href="#">Frosty Wendy's.</a></li>
+                                                <li><a href="#">Burger ( Beef, chicken )</a></li>
+                                                <li><a href="#">Oven PAN Pizza</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Drinks & Juice</h4>
+                                            <ul>
+                                                <li><a href="#">Carlsberg</a></li>
+                                                <li><a href="#">Anjeer Milk</a></li>
+                                                <li><a href="#">Budweiser</a></li>
+                                                <li><a href="#">Corona Extra</a></li>
+                                                <li><a href="#">Kingfisher beer</a></li>
+                                                <li><a href="#">Grey Goose</a></li>
+                                                <li><a href="#">Absolut Vodka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-item">
+                                            <h4 class="title">Coffee Shop</h4>
+                                            <ul>
+                                                <li><a href="#">CAFFÈ LATTE</a></li>
+                                                <li><a href="#">CAPPUCCINO</a></li>
+                                                <li><a href="#">CAFFÈ MOCHA.</a></li>
+                                                <li><a href="#">AFFOGATO</a></li>
+                                                <li><a href="#">COLD BREW COFFEE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="buttons-main">
+                                <a class="thm-btn gray-btn-bg" href="login.html">Login</a>
+                                <a class="thm-btn thmclr-btn-bg" href="register.html">Register</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- menu end here -->
+                    <div class="header-item item-right">
+                        <div class="icons">
+                            <a class="search" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="sub-icon">
+                                    <div class="search-close"><i class="fa-solid fa-plus"></i></div>
+                                    <div class="sub-icon-wrapper">
+                                        <div class="input-group">
+                                            <input type="text" id="myinput" placeholder="Search here . . ." />
+                                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </div>
+                                        <h3>07 Result show for your keyword</h3>
+                                    </div>
+                                    <div class="sub-inner">
+                                        <div class="shape1"><img src="assets/img/search/shape1.png" alt="shape1" /></div>
+                                        <div class="shape2"><img src="assets/img/search/shape2.png" alt="shape2" /></div>
+                                        <div class="shape3"><img src="assets/img/search/shape3.png" alt="shape3" /></div>
+                                        <div class="search-div" id="card">
+                                            <div class="single-search card" id="card1">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card2">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card3">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card4">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card5">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card6">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                            <div class="single-search card" id="card7">
+                                                <span>16 Nov, 2020</span>
+                                                <p>Dolor sit amet, consectetur adipiscing elit in tortor nam pulvinar lorem elementum lorem ipsum dolor . . .</p>
+                                            </div>
+                                        </div>
+                                        <div class="shape4"><img src="assets/img/search/shape4.png" alt="shape4" /></div>
+                                        <div class="shape5"><img src="assets/img/search/shape5.png" alt="shape5" /></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="cart" href="#cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="cart-area">
+                                    <div class="cart-div">
+                                        <div class="single-cart">
+                                            <img src="assets/img/header/cart1.png" alt="cart-1" />
+                                            <div class="search-desc">
+                                                <p>13 November , 2020</p>
+                                                <h6>16” Italian Slashy Pizza</h6>
+                                            </div>
+                                        </div>
+                                        <div class="single-cart">
+                                            <img src="assets/img/header/cart2.png" alt="cart-2" />
+                                            <div class="search-desc">
+                                                <p>13 November , 2020</p>
+                                                <h6>Rib Eye Steak platter</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button>Continue</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="buttons">
+                            <a class="thm-btn gray-btn-bg" href="login.html">Login</a>
+                            <a class="thm-btn thmclr-btn-bg" href="register.html">Register</a>
+                        </div>
+                        <div class="mobile-menu-trigger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--home banner starts from here-->
+        <section class="home-banner home2-banner" style="background-image: url('./assets/img/coffeeHome/homev2bg.png');">
+            <div class="container">
+                <div class="banner2-desc">
+                    <h3>Now taste a premium</h3>
+                    <h2>A cup of Coffee</h2>
+                    <p>Nibh purus integer elementum in. Tellus vulputate habitasse ut diam Auctor sit elementum, vulputate</p>
+                    <a class="thm-btn" href="">let’s See Menu</a>
+                </div>
+            </div>
+        </section>
+        <!--about area starts from here-->
+        <section class="about2-area" style="background-image: url('./assets/img/coffeeHome/about2bg.png');">
+            <div class="container">
+                <div class="about2-desc-wrapper">
+                    <div class="about2-desc">
+                        <div class="about2-content">
+                            <div class="about-section-title">
+                                <div class="about2-title">
+                                    <div class="s-line1"><span></span><span></span></div>
+                                    <h2>Expert Chef</h2>
+                                    <div class="s-line2"><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="about-desc">
+                                <h4 class="lobsterHeading">Why We are the best</h4>
+                                <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras. Volutpat vulputate mattis venenatis tellus felis urna, pulvinar. lectus volutpat dolor.</p>
+                                <p>
+                                    Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras. Volutpat vulputate mattis venenatis tellus felis urna, pulvinar. lectus volutpat dolor.Amet,
+                                    pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras. Volutpat vulputate mattis venenatis tellus felis urna, pulvinar. lectus volutpat dolor.
+                                </p>
+                                <ul>
+                                    <li>Volutpat vulputate mattis venenatis tellus felis urna, pulvinar. lectus volutpat dolor.</li>
+                                    <li>Mattis venenatis tellus felis urna lorem ipsum pulvinar.</li>
+                                    <li>Praesent porttitor natoque non odio vulputate.</li>
+                                    <li>Kolutpat vulputate mattis venenatis tellus felis urna.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about2-shape"><img src="assets/img/coffeeHome/shape.png" alt="shape" /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about area ends here-->
+        <!--menu area starts from here-->
+        <section class="Menu2-area">
+            <div class="container">
+                <div class="about-section-title">
+                    <div class="about2-title">
+                        <div class="s-line1"><span></span><span></span></div>
+                        <h2>Expert Chef</h2>
+                        <div class="s-line2"><span></span><span></span></div>
+                    </div>
+                    <p>Special Coffee in Town , 23 Different types of coffee</p>
+                </div>
+                <div class="menu2-wrap">
+                    <div class="allMenuItems">
+                        <div class="contentWrap contentWrap_line">
+                            <div class="singleMenuItems">
+                                <h2 class="lobsterHeading">Cold Coffee</h2>
+                                <span class="menuContain mb-20">
+                                    <span class="descMenu">
+                                        <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                        <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                    </span>
+                                    <span class="menu-price lobfami">$35</span>
+                                </span>
+                                <span class="menuContain mb-20">
+                                    <span class="descMenu">
+                                        <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                        <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                    </span>
+                                    <span class="menu-price lobfami">$35</span>
+                                </span>
+                                <span class="menuContain mb-20">
+                                    <span class="descMenu">
+                                        <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                        <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                    </span>
+                                    <span class="menu-price lobfami">$35</span>
+                                </span>
+                                <span class="menuContain mb-20">
+                                    <span class="descMenu">
+                                        <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                        <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                    </span>
+                                    <span class="menu-price lobfami">$35</span>
+                                </span>
+                                <span class="menuContain b-none mb-20">
+                                    <span class="descMenu">
+                                        <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                        <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                    </span>
+                                    <span class="menu-price lobfami">$35</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="singleMenuItems">
+                            <h2 class="lobsterHeading">Hot Coffee</h2>
+                            <span class="menuContain mb-20">
+                                <span class="descMenu">
+                                    <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                    <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                </span>
+                                <span class="menu-price lobfami">$35</span>
+                            </span>
+                            <span class="menuContain mb-20">
+                                <span class="descMenu">
+                                    <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                    <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                </span>
+                                <span class="menu-price lobfami">$35</span>
+                            </span>
+                            <span class="menuContain mb-20">
+                                <span class="descMenu">
+                                    <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                    <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                </span>
+                                <span class="menu-price lobfami">$35</span>
+                            </span>
+                            <span class="menuContain mb-20">
+                                <span class="descMenu">
+                                    <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                    <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                </span>
+                                <span class="menu-price lobfami">$35</span>
+                            </span>
+                            <span class="menuContain b-none mb-20">
+                                <span class="descMenu">
+                                    <span class="boldh5">Soft-Boiled Organic Egg</span>
+                                    <span class="menuP">Red onion marmelade, garlic Foccacia bread, grilled figs</span>
+                                </span>
+                                <span class="menu-price lobfami">$35</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="review-btn">
+                        <a class="thm-btn" href="#">Load More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu2Shape">
+                <img src="assets/img/coffeeHome/menuBg.png" alt="menuBg" />
+            </div>
+        </section>
+        <!--menu area ends -->
+        <!--Reservation area starts from here-->
+        <section class="reservation-areaV3 reservationV2 pt-100 pb-100" style="background-image: url('./assets/img/coffeeHome/reservationBg.png');">
+            <div class="container">
+                <div class="about-section-title">
+                    <div class="about2-title">
+                        <div class="s-line1"><span></span><span></span></div>
+                        <h2>Reservation</h2>
+                        <div class="s-line2"><span></span><span></span></div>
+                    </div>
+                    <p>Special Coffee in Town , 23 Different types of coffee</p>
+                </div>
+                <div class="reservation-wrapper reservation-wrap2">
+                    <div class="reservation-form">
+                        <div class="reservation-form-top-wrapper">
+                            <div class="form-top" style="background-image: url('./assets/img/coffeeHome/reservationShape.png');">
+                                <h4>Fill the Form</h4>
+                                <div class="all-form">
+                                    <div class="input-col">
+                                        <p>Name</p>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Enter Your Full Name" class="form-control" />
+                                            <span class="input-group-text"><i class="far fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-col">
+                                        <p>E-mail</p>
+                                        <div class="input-group">
+                                            <input type="email" placeholder="Enter your mail" class="form-control" />
+                                            <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-col">
+                                        <p>Phone</p>
+                                        <div class="input-group">
+                                            <input type="number" placeholder="Enter Your Full Name" class="form-control" />
+                                            <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-col">
+                                        <p>Guest</p>
+                                        <div class="input-group">
+                                            <select>
+                                                <option data-display="20+">20+</option>
+                                                <option value="1">30+</option>
+                                                <option value="2">40+</option>
+                                                <option value="3">50+</option>
+                                                <option value="4">60+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-col">
+                                        <p>Date</p>
+                                        <div class="form-group">
+                                            <div class="input-group date" id="datepicker">
+                                                <input type="text" placeholder="12-06-2021" />
+                                                <!-- class="form-control"-->
+
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"><i class="fa-solid fa-calendar-days"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-col">
+                                        <p>Time</p>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="7PM-9PM" class="form-control" />
+                                            <span class="input-group-text"><i class="fa-regular fa-clock"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="thm-btn" href="#">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="query">
+                                <h4>For Any Query</h4>
+                                <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras. Volutpat vulputate mattis venenatis tellus felis urna, pulvinar.</p>
+                            </div>
+                            <div class="form-contact">
+                                <ul>
+                                    <li>
+                                        <button><i class="fas fa-phone-alt"></i></button> +123 -456 789 123
+                                    </li>
+                                    <li>
+                                        <button><i class="far fa-envelope"></i></button> demomail@gmail.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Reservation area ends here-->
+        <!--Working Process starts-->
+        <section class="working-process2">
+            <div class="container">
+                <div class="about-section-title">
+                    <div class="about2-title">
+                        <div class="s-line1"><span></span><span></span></div>
+                        <h2>Work Process</h2>
+                        <div class="s-line2"><span></span><span></span></div>
+                    </div>
+                    <p>Special Coffee in Town , 23 Different types of coffee</p>
+                </div>
+            </div>
+            <div class="process2-area">
+                <div class="processing-wrapper" style="background-image: url('./assets/img/coffeeHome/work1.png');">
+                    <div class="process-video">
+                        <div class="video-btn4">
+                            <a class="popup-video" href="assets/img/defaultHome/video.mp4"><img src="assets/img/homeV4/processBtn.png" alt="procesbtn" /></a>
+                        </div>
+                        <span>12 June , 2021</span>
+                        <h5>How can make pure choco powder with coffee ?</h5>
+                    </div>
+                </div>
+                <div class="processing-wrapper" style="background-image: url('./assets/img/coffeeHome/work2.png');">
+                    <div class="process-video">
+                        <div class="video-btn4">
+                            <a class="popup-video" href="assets/img/defaultHome/video.mp4"><img src="assets/img/homeV4/processBtn.png" alt="procesbtn" /></a>
+                        </div>
+                        <span>12 June , 2021</span>
+                        <h5>How can make pure choco powder with coffee ?</h5>
+                    </div>
+                </div>
+                <div class="processing-wrapper" style="background-image: url('./assets/img/coffeeHome/work3.png');">
+                    <div class="process-video">
+                        <div class="video-btn4">
+                            <a class="popup-video" href="assets/img/defaultHome/video.mp4"><img src="assets/img/homeV4/processBtn.png" alt="procesbtn" /></a>
+                        </div>
+                        <span>12 June , 2021</span>
+                        <h5>How can make pure choco powder with coffee ?</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--working process area ends-->
+        <!--Home review starts from here-->
+        <section class="home-review home-review2" style="background-image: url('./assets/img/coffeeHome/revewBg.png');">
+            <div class="container">
+                <div class="about-section-title">
+                    <div class="about2-title">
+                        <div class="s-line1"><span></span><span></span></div>
+                        <h2>Customer Review</h2>
+                        <div class="s-line2"><span></span><span></span></div>
+                    </div>
+                    <p>Special Coffee in Town , 23 Different types of coffee</p>
+                </div>
+                <div class="hme-ReviewSlider owl-carousel">
+                    <div class="single-rvw-slide">
+                        <div class="cotation">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras. Volutpat vulputate mattis venenatis tellus felis urna, pulvinar. lectus volutpat dolor.</p>
+                        <span></span>
+                        <div class="name">
+                            <a href="chefDetails.html">James Williamson</a>
+                            <p>Thai Master Chef</p>
+                        </div>
+                    </div>
+                    <div class="single-rvw-slide">
+                        <div class="cotation">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <p>Tage die zu äolsharfe der was herzen gedränge die alten getäuscht. Um erste lispelnd freundliche strenge und die die, wird mein hinweggeschwunden was schatten in vom. Mich mit mir gedränge.</p>
+                        <span></span>
+                        <div class="name">
+                            <a href="chefDetails.html">Kathlene Roser</a>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                    <div class="single-rvw-slide">
+                        <div class="cotation">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia nulla autem nesciunt eligendi. Et in aspernatur eum. Cum laboriosam velit accusamus quis consequuntur doloribus veniam aperiam sit dolore
+                            amet?
+                        </p>
+                        <span></span>
+                        <div class="name">
+                            <a href="chefDetails.html">Pierre Gagnaire</a>
+                            <p>Thai best Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--why best-->
+        <section class="best-reason" style="background-image: url('./assets/img/coffeeHome/bestBg.png');">
+            <div class="container">
+                <div class="best-title">
+                    <h2>5 Reason , Why our Coffee best</h2>
+                </div>
+                <div class="best-reason-wrapper">
+                    <div class="single-best">
+                        <div class="dot"></div>
+                        <div class="best-desc">
+                            <h4>World best Chef</h4>
+                            <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras.</p>
+                        </div>
+                    </div>
+                    <div class="single-best">
+                        <div class="dot"></div>
+                        <div class="best-desc">
+                            <h4>World best Chef</h4>
+                            <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras.</p>
+                        </div>
+                    </div>
+                    <div class="single-best">
+                        <div class="dot"></div>
+                        <div class="best-desc">
+                            <h4>World best Chef</h4>
+                            <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras.</p>
+                        </div>
+                    </div>
+                    <div class="single-best">
+                        <div class="dot"></div>
+                        <div class="best-desc">
+                            <h4>World best Chef</h4>
+                            <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras.</p>
+                        </div>
+                    </div>
+                    <div class="single-best">
+                        <div class="dot"></div>
+                        <div class="best-desc">
+                            <h4>World best Chef</h4>
+                            <p>Amet, pretium elementum ut praesent porttitor natoque non odio. Vel ut integer feugiat ut velit phasellus cras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--why best end-->
+        <!--expert team starts-->
+        <section class="expert-chef4 expert-chef2" style="background-image: url('./assets/img/coffeeHome/bgShape.png');">
+            <div class="container">
+                <div class="about-section-title">
+                    <div class="about2-title">
+                        <div class="s-line1"><span></span><span></span></div>
+                        <h2>Expert Chef</h2>
+                        <div class="s-line2"><span></span><span></span></div>
+                    </div>
+                    <p>Special Coffee in Town , 23 Different types of coffee</p>
+                </div>
+                <div class="chefWrapper2">
+                    <div class="single-chef2">
+                        <div class="chef-img">
+                            <img src="assets/img/chef/team1.png" alt="team1" />
+                        </div>
+                        <div class="chef-description">
+                            <div class="shape-svg">
+                                <svg width="347" height="190" viewBox="0 0 347 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 61.9995V31H119.221C128.586 28.4308 136.915 21.3125 144.99 14.4114C148.372 11.5208 151.71 8.6683 155.06 6.20414C160.363 2.30411 166.913 0 174 0C181.087 0 187.637 2.30411 192.94 6.20414C196.29 8.66831 199.628 11.5208 203.01 14.4114C211.085 21.3125 219.414 28.4308 228.779 31H347V61.9995V81.4995V160C347 176.569 333.569 190 317 190H30C13.4315 190 0 176.569 0 160V81.4995V61.9995Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="descript">
+                                <div class="media-buttons">
+                                    <a class="media" href="#"><i class="fab fa-facebook-f media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-twitter media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-instagram media-icon"></i></a>
+                                </div>
+                                <div class="name">
+                                    <span>James Williamson</span>
+                                    <p>Thai Master Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-chef2">
+                        <div class="chef-img">
+                            <img src="assets/img/chef/team2.png" alt="team1" />
+                        </div>
+                        <div class="chef-description">
+                            <div class="shape-svg">
+                                <svg width="347" height="190" viewBox="0 0 347 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 61.9995V31H119.221C128.586 28.4308 136.915 21.3125 144.99 14.4114C148.372 11.5208 151.71 8.6683 155.06 6.20414C160.363 2.30411 166.913 0 174 0C181.087 0 187.637 2.30411 192.94 6.20414C196.29 8.66831 199.628 11.5208 203.01 14.4114C211.085 21.3125 219.414 28.4308 228.779 31H347V61.9995V81.4995V160C347 176.569 333.569 190 317 190H30C13.4315 190 0 176.569 0 160V81.4995V61.9995Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="descript">
+                                <div class="media-buttons">
+                                    <a class="media" href="#"><i class="fab fa-facebook-f media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-twitter media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-instagram media-icon"></i></a>
+                                </div>
+                                <div class="name">
+                                    <span>James Williamson</span>
+                                    <p>Thai Master Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-chef2">
+                        <div class="chef-img">
+                            <img src="assets/img/chef/team3.png" alt="team1" />
+                        </div>
+                        <div class="chef-description">
+                            <div class="shape-svg">
+                                <svg width="347" height="190" viewBox="0 0 347 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 61.9995V31H119.221C128.586 28.4308 136.915 21.3125 144.99 14.4114C148.372 11.5208 151.71 8.6683 155.06 6.20414C160.363 2.30411 166.913 0 174 0C181.087 0 187.637 2.30411 192.94 6.20414C196.29 8.66831 199.628 11.5208 203.01 14.4114C211.085 21.3125 219.414 28.4308 228.779 31H347V61.9995V81.4995V160C347 176.569 333.569 190 317 190H30C13.4315 190 0 176.569 0 160V81.4995V61.9995Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="descript">
+                                <div class="media-buttons">
+                                    <a class="media" href="#"><i class="fab fa-facebook-f media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-twitter media-icon"></i></a>
+                                    <a class="media" href="#"><i class="fab fa-instagram media-icon"></i></a>
+                                </div>
+                                <div class="name">
+                                    <span>James Williamson</span>
+                                    <p>Thai Master Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-btn">
+                    <a class="thm-btn" href="#">Load More chef</a>
+                </div>
+            </div>
+        </section>
+        <!--expert team ends-->
+        <!--subscribe -->
+        <section class="subscribe-area subscribe2 pt-100 pb-100">
+            <div class="container">
+                <div class="contact">
+                    <div class="sectionTitle">
+                        <h2>Subscribe Newsletter</h2>
+                        <p>Nibh purus integer elementum in. Tellus vulputate habitasse ut diam Auctor sit elementum, vulputate</p>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="form">
+                        <p>E-mail</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your mail" class="form-control" />
+                            <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                        </div>
+                        <button class="thm-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer starts from here-->
+        <footer class="footer">
+            <div class="footer-area footer2-area" style="background-image: url('./assets/img/coffeeHome/footerBg.png');">
+                <div class="container">
+                    <div class="footer-part-1 pt-70 pb-70">
+                        <div class="row justify-content-between">
+                            <div class="col-xxl-4 col-xl-6 col-lg-12 orderC-1 orderXl-1">
+                                <div class="social-media">
+                                    <img src="assets/img/coffeeHome/footerlogo.png" alt="footerlogo" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lobortis in in tortor lectus iaculis viverra. Adipiscing lobortis interdum fringilla euismod odio vitae.</p>
+                                    <div class="media-buttons">
+                                        <a class="media" href="#"><i class="fab fa-facebook-f media-icon"></i></a>
+                                        <a class="media" href="#"><i class="fab fa-twitter media-icon"></i></a>
+                                        <a class="media" href="#"><i class="fab fa-instagram media-icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 orderC-2 orderXl-3">
+                                <div class="sitemap">
+                                    <h5>Sitemap</h5>
+                                    <div class="site-ul">
+                                        <ul>
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Blog Post</a></li>
+                                            <li><a href="#">Food Menu</a></li>
+                                            <li><a href="#">contact Us</a></li>
+                                            <li><a href="#">shop Page</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Testimonial</a></li>
+                                            <li><a href="#">Expert chef</a></li>
+                                            <li><a href="#">Error</a></li>
+                                            <li><a href="#">Reservation</a></li>
+                                            <li><a href="#">coming Soon</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-md-30 orderC-3 orderXl-2">
+                                <div class="customer-support">
+                                    <h5>Customer Support</h5>
+                                    <ul>
+                                        <li><a href="#">Return Policy</a></li>
+                                        <li><a href="#">Gift Voucher</a></li>
+                                        <li><a href="#">ANy Complain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 orderC-4 orderXl-4">
+                                <div class="address">
+                                    <h5>Address</h5>
+                                    <ul>
+                                        <li><i class="fa-solid fa-location-dot"></i> <a href="#">23/ A Lake Side , New Arizona , USA</a></li>
+                                        <li><i class="fa-solid fa-envelope"></i> <a href="#">foodzone@gmail.com</a></li>
+                                        <li><i class="fa-solid fa-phone"></i> <a href="#">+111 - (1234 5678 99)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 xol-xl-4 col-lg-4 col-md-4 col-sm-6 orderC-7 orderXl-7">
+                                <div class="subscribe">
+                                    <p>Subscribe Newsletter</p>
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter your mail" class="form-control" />
+                                        <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-12 orderC-8 orderXl-8">
+                                <div class="payment">
+                                    <h5>Payment Method</h5>
+                                    <div class="payment-dev">
+                                        <div class="single-pay"><a href="#"><img src="assets/img/footer/paypal.png" alt="paypal"></a></div>
+                                        <div class="single-pay"><a href="#"><img src="assets/img/footer/masterCard.png" alt="masterCard"></a></div>
+                                        <div class="single-pay"><a href="#"><img src="assets/img/footer/visa.png" alt="visa"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-6 orderC-5 orderXl-5">
+                                <div class="link">
+                                    <h5>Important Link</h5>
+                                    <ul>
+                                        <li><a href="#">Help & FAQ</a></li>
+                                        <li><a href="#">Terms & Condition</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 orderC-6 mb-lg-30 orderXl-6">
+                                <div class="open-hour">
+                                    <h5>Opening Hour</h5>
+                                    <ul>
+                                        <li>Monday - Friday <span>10am - 7pm</span></li>
+                                        <li>Sunday - Sunday <span>10pm - 4am</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="copyright">
+                        <p>Copyright © 2021 foodzone All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer ends here-->
+        <!-- <a href="javascript:void(0)"id="return"class="scrollTop top2"><i class="fa-regular fa-angle-up"></i></a> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/odometer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/image-loaded.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/magnific.min.js"></script>
+        <script src="assets/js/dataTables.min.js"></script>
+        <script src="assets/js/jQuery.countdown.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <!-- <script src="assets/js/onePageNav.js"></script> -->
+        <!-- <script src="assets/js/nouislider.js"></script> -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

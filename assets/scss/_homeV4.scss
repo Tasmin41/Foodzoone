@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+.bannerV4-area {
+  position: relative;
+  z-index: 1;
+  padding: 280px 0 150px 0px;
+  background-color: #fef3f6;
+  @include mq(lg) {
+    padding: 150px 0 100px 0px;
+  }
+  @include mq(md) {
+    padding: 150px 0 70px 0px;
+  }
+  @include mq(xs) {
+    padding: 120px 0 50px 0px;
+  }
+  .bannerV4-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .bShape2,
+  .bShape3,
+  .bShape4,
+  .bShape5,
+  .bShape6 {
+    position: absolute;
+    z-index: -1;
+  }
+  .bShape2 {
+    top: 33%;
+    left: 25px;
+    @include mq(lg) {
+      max-width: 50px;
+    }
+    @include mq(sm) {
+      display: none;
+    }
+  }
+  .bShape3 {
+    left: 8%;
+    bottom: 12%;
+    @include mq(lg) {
+      max-width: 300px;
+    }
+    @include mq(md) {
+      bottom: 60%;
+      left: 10%;
+    }
+    @include mq(xs) {
+      bottom: 41%;
+      left: 12%;
+    }
+    @include mq(sm) {
+      max-width: 200px;
+      bottom: 53%;
+    }
+  }
+  .bShape4 {
+    left: 40%;
+    bottom: 20%;
+    @include mq(lg) {
+      max-width: 100px;
+    }
+  }
+  .bShape5 {
+    left: 2%;
+    bottom: 3%;
+    @include mq(lg) {
+      max-width: 100px;
+    }
+  }
+  .bShape6 {
+    left: 42%;
+    bottom: 10%;
+  }
+}
+.bannerV4-wrapper {
+  display: flex;
+  max-width: 1367px;
+  margin: 0 auto;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: column;
+  }
+  @include mq(sm) {
+    gap: 10px;
+  }
+}
+.bannerv4-content {
+  max-width: 635px;
+  width: 100%;
+  h3 {
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: 20px;
+    @include mq(lg) {
+      font-size: 24px;
+      font-weight: 1.2rem;
+      margin-bottom: 10px;
+    }
+    @include mq(sm) {
+      font-size: 18px;
+    }
+  }
+  h2 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 5rem;
+    margin-bottom: 20px;
+    @include mq(lg) {
+      font-size: 50px;
+      line-height: 3rem;
+    }
+    @include mq(sm) {
+      font-size: 38px;
+      margin-bottom: 15px;
+      line-height: 2rem;
+    }
+    span {
+      color: $themeV4;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 20px;
+    max-width: 530px;
+    @include mq(lg) {
+      max-width: 383px;
+      font-size: 16px;
+    }
+    @include mq(md) {
+      max-width: 100%;
+    }
+    @include mq(xs) {
+      line-height: 1.5rem;
+    }
+  }
+  a {
+    background-color: $themeV4;
+    color: $white-dark;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    @include mq(xs) {
+      margin-bottom: 20px;
+    }
+  }
+  .media-buttons {
+    display: flex;
+    a {
+      background-color: $white-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      &.media {
+        margin-bottom: 0;
+      }
+      &:hover {
+        background-color: $themeV4;
+        border: none;
+        i {
+          color: $white-dark;
+        }
+      }
+      i {
+        color: $themeV4;
+      }
+    }
+  }
+}
+.bannerv4-img {
+  position: relative;
+  max-width: 686px;
+  padding-right: 235px;
+  @include mq(xl) {
+    padding-right: 100px;
+  }
+  @include mq(lg) {
+    padding-right: 82px;
+  }
+  @include mq(md) {
+    padding-right: 0;
+  }
+  .b4-img {
+    max-width: 447px;
+    width: 100%;
+    @include mq(xs) {
+      max-width: 250px;
+    }
+  }
+  @include mq(md) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  @include mq(xs) {
+    max-width: 300px;
+  }
+  .bC-shape1,
+  .bC-shape2,
+  .bC-shape3 {
+    position: absolute;
+    @include mq(xl) {
+      max-width: 150px;
+    }
+    @include mq(xs) {
+      max-width: 100px;
+    }
+  }
+  .bC-shape1 {
+    top: 0;
+    left: -7%;
+    @include mq(xl) {
+      left: -19%;
+    }
+    @include mq(lg) {
+      left: -17%;
+      top: -21%;
+    }
+    @include mq(md) {
+      left: -13%;
+      top: -3%;
+    }
+    @include mq(xs) {
+      left: -22%;
+      top: 8%;
+    }
+    @include mq(sm) {
+      display: none;
+    }
+  }
+  .bC-shape2 {
+    top: 0;
+    right: 10%;
+    @include mq(xl) {
+      right: 0;
+      top: 15px;
+    }
+    @include mq(lg) {
+      right: 0;
+      top: -49px;
+    }
+    @include mq(md) {
+      top: 24px;
+      right: -22%;
+    }
+    @include mq(xs) {
+      top: -16px;
+      right: -17%;
+    }
+    @include mq(sm) {
+      display: none;
+    }
+  }
+  .bC-shape3 {
+    top: 45%;
+    right: 0;
+    @include mq(xl) {
+      display: none;
+    }
+  }
+}
+
+//about scss starts
+.about-area4 {
+  @include mq(xs) {
+    padding-top: 50px;
+  }
+}
+.about-area4 {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about4-wrapper {
+  max-width: 955px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 135px;
+  @include mq(md) {
+    flex-direction: column-reverse;
+  }
+}
+.about4-content {
+  max-width: 514px;
+  .about-desc {
+    @include about-desc($black-dark);
+    margin-top: 40px;
+    @include mq(xs) {
+      margin-top: 20px;
+    }
+    h4 {
+      font-weight: 600;
+    }
+  }
+}
+.hm4-title {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @include mq(sm) {
+    margin-bottom: 20px;
+  }
+  .about4-title {
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    @include mq(sm) {
+      font-size: 16px;
+      line-height: 1.7rem;
+    }
+  }
+}
+.about4-title {
+  display: flex;
+  gap: 5px;
+  h3 {
+    font-size: 36px;
+    line-height: 3.5rem;
+    font-family: 'Comic Neue', cursive;
+  }
+}
+//about scss ends
+//category scss starts
+.category4-wrapper {
+  max-width: 1367px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include mq(xs) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+  }
+  @include mq(sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .single-cat4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cat4-img {
+      background-color: $themV4l;
+      border-radius: 10px;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    a {
+      color: $black-dark;
+      font-size: 20px;
+      line-height: 2rem;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+}
+//category scss ends
+//menu version 4 scss starts
+.menuV4 {
+  @include mq(xs) {
+    padding: 50px 0;
+  }
+}
+.menuV4-wrapper {
+  max-width: 1367px;
+  margin: 0 auto;
+  .nav-tabs {
+    border-bottom: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 843px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+    .nav-link {
+      margin-bottom: 0;
+      background: 0 0;
+      border: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: 15px 30px;
+      background-color: $themV4l;
+      color: $black-dark;
+      font-size: 20px;
+      font-family: 'Comic Neue', cursive;
+      line-height: 2rem;
+      &.active {
+        color: $themeV4;
+      }
+      @include mq(xs){
+        line-height: 1.6rem;
+        padding: 15px 20px;
+      }
+    }
+  }
+  .tab-content {
+    margin-top: 40px;
+    @include mq(xs) {
+      margin-top: 20px;
+    }
+    .tab-pane {
+      .allmenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mq(md) {
+          grid-template-columns: 1fr;
+        }
+        .singleMenuItems {
+          background-color: $themV4l;
+          padding: 50px 60px;
+          @include mq(sm) {
+            padding: 30px;
+          }
+          .menuContain {
+            transition: 0.3s;
+            &.s-border {
+              border-bottom: 1px solid $themeV4 !important;
+            }
+            &:hover {
+              .descMenu {
+                .boldh5 {
+                  color: $themeV4;
+                }
+              }
+              .menu-price {
+                color: $themeV4;
+              }
+            }
+          }
+          .menuS1,
+          .menuS2 {
+            text-align: center;
+          }
+          .menuS1 {
+            margin-bottom: 20px;
+          }
+          &:nth-child(even) {
+            background-color: #ffecf1 !important;
+          }
+        }
+      }
+    }
+  }
+}
+//menu version 4 scss ends
+//working process scss starts
+.working-process4 {
+  @include mq(xs) {
+    padding: 50px 0;
+  }
+}
+.processing-wrapper {
+  max-width: 1367px;
+  margin: 0 auto;
+  @include bgImg;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 200px 30px;
+  @include mq(xs) {
+    height: 400px;
+    padding: 150px 30px;
+  }
+  @include mq(sm) {
+    height: 300px;
+    padding: 75px 30px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f2228;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .process-video {
+    text-align: center;
+    .video-btn4 {
+      margin-bottom: 40px;
+      img {
+        @include mq(sm) {
+          width: 50px;
+        }
+      }
+      @include mq(sm) {
+        margin-bottom: 20px;
+      }
+    }
+    span {
+      color: $white-dark;
+      margin-bottom: 10px;
+      font-weight: 500;
+      line-height: 1.7rem;
+    }
+    h5 {
+      line-height: 1.8rem;
+      font-weight: 600;
+      color: $white-dark;
+      max-width: 330px;
+      margin: 0 auto;
+      @include mq(sm) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+//working process scss end
+//Review scss starts from here
+.reviewV4 {
+  .review-slider {
+    max-width: 1367px;
+    margin: 0 auto;
+    .sliderfirst {
+      .review-img-bottom {
+        margin-top: 40px;
+      }
+    }
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $themeV4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $themV4l;
+          width: 40px;
+          height: 40px;
+          @include mq(xs) {
+            top: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            width: auto;
+            height: auto;
+          }
+          &.owl-next {
+            right: 0;
+            @include mq(xs) {
+              right: 47%;
+            }
+            &:hover {
+              color: $theme-dark;
+            }
+          }
+          &.owl-prev {
+            left: 0;
+            @include mq(xs) {
+              left: 47%;
+            }
+            &:hover {
+              color: $theme-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Review scss ends here
+//chef scss starts from here
+.expert-chef4 {
+  @include mq(xs) {
+    padding: 50px 0;
+  }
+  position: relative;
+  z-index: 1;
+  .chefS1,
+  .chefS2,
+  .chefS3,
+  .chefS4 {
+    position: absolute;
+    z-index: -1;
+    @include mq(xs) {
+      display: none;
+    }
+  }
+  .chefS1 {
+    top: 280px;
+    left: 173px;
+    @include mq(xxl) {
+      top: 205px;
+      left: 107px;
+    }
+  }
+  .chefS2 {
+    top: 333px;
+    right: 125px;
+    @include mq(xxl) {
+      right: 63px;
+    }
+  }
+  .chefS3 {
+    bottom: 204px;
+    left: 85px;
+    @include mq(xxl) {
+      left: 73px;
+    }
+    @include mq(xl) {
+      bottom: 0;
+    }
+  }
+  .chefS4 {
+    bottom: 204px;
+    right: 85px;
+    @include mq(xxl) {
+      right: 73px;
+    }
+    @include mq(xl) {
+      bottom: 0;
+    }
+  }
+  .review-btn {
+    a {
+      color: $white-dark;
+      background-color: $themeV4;
+    }
+  }
+}
+.chef-warpper4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(sm) {
+    grid-template-columns: 1fr;
+  }
+  .single-member {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      .team-desc {
+        background-color: $themeV4;
+        .media-buttons {
+          .media {
+            background-color: $white-dark;
+            .media-icon {
+              color: $themeV4;
+            }
+          }
+        }
+        .name {
+          color: $white-dark;
+        }
+      }
+    }
+    img {
+      border-radius: 30px 30px 0 0;
+      width: 100%;
+    }
+    .team-desc {
+      color: $black-light;
+      text-align: center;
+      padding: 36px 0px 30px 0;
+      width: 100%;
+      .media-buttons {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        a {
+          color: $black-light;
+          .media-icon {
+            color: $black-light;
+          }
+        }
+      }
+      .name {
+        color: $black-light;
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.7rem;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+//chef scss ends here
+.top4{
+  background-color: $themeV4;
+}

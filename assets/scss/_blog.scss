@@ -1,0 +1,171 @@
+.blog-area {
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+    .blog-wrapper {
+      max-width: 1304px;
+      margin: 0 auto;
+      .blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        @include mq(xs) {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .single-blog {
+          @include bgImg;
+          border-radius: 10px;
+          padding: 15px;
+          .blog-content {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            max-width: 466px;
+            margin: 100px auto;
+            padding: 41px 39px;
+            transition: 0.4s;
+            @include mq(xl) {
+              max-width: 400px;
+              margin: 75px auto;
+              padding: 30px;
+            }
+            @include mq(md) {
+              max-width: 300px;
+              margin: 50px auto;
+              padding: 20px;
+            }
+            @include mq(xs) {
+              max-width: 400px;
+              margin: 75px auto;
+              padding: 30px;
+            }
+            @include mq(sm) {
+              max-width: 100%;
+              margin: 50px auto;
+              padding: 20px;
+            }
+            a {
+              display: inline-block;
+            }
+            &:hover {
+              .top-cntn {
+                .blogDate {
+                  i {
+                    color: $theme-dark;
+                  }
+                }
+                .fastbtn {
+                  background-color: $theme-dark !important;
+                  color: $white-dark;
+                }
+              }
+              .thm-btn {
+                background-color: $theme-dark;
+                color: $white-dark;
+              }
+            }
+            .top-cntn {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              gap: 10px;
+              @include mq(md) {
+                margin-bottom: 10px;
+              }
+              .blogDate {
+                display: flex;
+                i {
+                  font-size: 18px;
+                  margin-right: 10px;
+                  color: $black-light;
+                  @include mq(md) {
+                    font-size: 16px;
+                  }
+                }
+                p {
+                  line-height: 1.5rem;
+                  color: $black-light;
+                  margin-bottom: 0 !important;
+                  color: #555555;
+                }
+              }
+            }
+            .blogPara {
+              color: #1f2228;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 2rem;
+              @include mq(md) {
+                font-size: 18px;
+                line-height: 1.5rem;
+              }
+            }
+            .thm-btn {
+              background-color: $black-light;
+              color: $white-dark;
+              margin-top: 20px;
+              @include mq(md) {
+                padding: 10px 15px;
+              }
+            }
+          }
+        }
+      }
+      .blog-pagination {
+        background-color: $gray-light;
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            display: inline-block;
+            a {
+              font-size: 24px;
+              color: #333;
+              line-height: 2rem;
+              font-weight: 500;
+              padding: 16px 25px;
+              display: block;
+              position: relative;
+              transition: 0.3s;
+              @include mq(md) {
+                font-size: 18px;
+                padding: 16px 20px;
+                line-height: 1rem;
+              }
+              &::before {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 2px;
+                left: 50%;
+                bottom: 0;
+                background-color: $theme-dark;
+                transform: translateX(-50%);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+              }
+              &:hover {
+                color: tomato;
+                &::before {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //fast food btn
+  .fastbtn {
+    padding: 5px 10px;
+    color: $white-dark;
+    border-radius: 40px;
+    background-color: #c9ab81 !important;
+  }
+  

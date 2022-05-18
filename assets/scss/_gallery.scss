@@ -1,0 +1,172 @@
+.gallery-sizer,
+.single-gallery {
+  width: calc(100% / 4 - 1px);
+  @include mq(lg) {
+    width: calc(100% / 3 - 1px);
+  }
+  @include mq(md) {
+    width: calc(100% / 2 - 1px);
+  }
+  @include mq(sm) {
+    width: calc(100% / 1 - 1px);
+  }
+}
+
+.w-2 {
+  width: calc(50% - 1px);
+  @include mq(lg){
+    width: 66.66%;
+  }
+  @include mq(md) {
+    width: 100%;
+  }
+  @include mq(xs) {
+    width: 100%;
+  }
+}
+
+.h-2 {
+  height: 693px;
+  @include mq(lg) {
+    height: 430px;
+  }
+}
+
+.gallery {
+  margin: -15px;
+  @include mq(md) {
+    margin: -10px;
+  }
+}
+.gallery-img {
+  margin: 15px;
+  @include mq(md) {
+    margin: 10px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.long-w {
+  max-width: 775px;
+  height: 333px;
+  @include mq(lg) {
+    height: 200px;
+  }
+}
+.s-w {
+  height: 333px;
+  @include mq(lg) {
+    height: 200px;
+  }
+}
+.gallery-area {
+  @include mq(md) {
+    padding: 50px 0;
+  }
+}
+.top-content {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  .icons {
+    gap: 10px !important;
+    a {
+      width: 40px;
+      height: 40px;
+      transform: translateY(-50px);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s;
+      &:first-child {
+        transition-duration: 0.3s;
+      }
+      &:last-child {
+        transition-duration: 0.6s;
+      }
+    }
+  }
+}
+
+.bottom-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  p {
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition-duration: 0.3s;
+  }
+  h5 {
+    transition-duration: 0.6s;
+  }
+  p,
+  h5 {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// //gallery overlay
+.galoverlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  color: $white-dark;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  @include overlay(0);
+  &::before {
+    background-color: $black-dark;
+    mix-blend-mode: multiply;
+    z-index: 2 !important;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  @include mq(md) {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.7;
+    }
+    .galoverlay-content {
+      opacity: 1;
+      visibility: visible;
+      .top-content {
+        .icons {
+          a {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+      }
+      .bottom-content {
+        p,
+        h5 {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

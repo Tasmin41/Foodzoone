@@ -1,0 +1,314 @@
+.checkout-area {
+  @include mq(xs) {
+    padding: 50px 0;
+  }
+}
+.checkout-wrapper {
+  max-width: 1374px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  @include mq(md) {
+    flex-direction: column;
+  }
+  @include mq(sm) {
+    margin-bottom: 30px;
+  }
+}
+
+.billing-info {
+  max-width: 860px;
+  width: 100%;
+  .lobsterHeading {
+    margin-bottom: 30px;
+  }
+}
+.bill-info-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  @include mq(xs) {
+    padding-bottom: 20px;
+  }
+  @include mq(sm) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .input-col {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include mq(sm) {
+      margin-bottom: 10px;
+    }
+    p {
+      font-weight: 600;
+      line-height: 1.2rem;
+      margin-bottom: 20px;
+      @include mq(sm) {
+        margin-bottom: 10px;
+      }
+    }
+    input {
+      padding: 20px;
+      width: 100%;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      height: 60px;
+      @include mq(sm) {
+        padding: 10px;
+        height: 50px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      padding: 20px;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      resize: none;
+      @include mq(sm) {
+        padding: 10px;
+        height: 130px;
+      }
+    }
+  }
+  .nice-select {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: $gray-light;
+    color: $black-light;
+    border: 1px solid $gray;
+    height: 60px;
+    border-radius: 5px;
+    @include mq(sm) {
+      padding: 10px;
+      height: 50px;
+    }
+    &::after {
+      border-bottom: 2px solid $black-dark;
+      border-right: 2px solid $black-dark;
+      height: 12px;
+      margin-top: -7px;
+      top: 50%;
+      width: 12px;
+      right: 25px;
+      @include mq(sm) {
+        width: 9px;
+        height: 9px;
+      }
+    }
+    .list {
+      margin-top: 0px;
+      width: 100%;
+    }
+    .option {
+      border-bottom: 0;
+      color: $black-dark;
+    }
+  }
+}
+.product-info {
+  background-color: $gray-light;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 386px;
+  width: 100%;
+  @include mq(md) {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .lobsterHeading {
+    margin-bottom: 30px;
+  }
+  .product {
+    @include mq(md) {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mq(sm) {
+      grid-template-columns: 1fr;
+    }
+    .single-product {
+      padding: 40px 0;
+      border-bottom: 1px solid $gray;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      @include mq(md) {
+        padding: 0;
+        padding-bottom: 30px;
+      }
+      @include mq(sm) {
+        justify-content: flex-start;
+        padding-bottom: 20px;
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 30px;
+      }
+      .pro-desc {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.2rem;
+          color: $theme-dark;
+          margin-bottom: 10px;
+        }
+        h6 {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.8rem;
+          margin-bottom: 10px;
+        }
+        span {
+          font-size: 16px;
+          color: $black-light;
+          font-weight: 600;
+          line-height: 1.8rem;
+          margin-bottom: 10px;
+        }
+        h5 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 1.8rem;
+          color: $theme-dark;
+        }
+      }
+    }
+  }
+  .subtotal-pro {
+    padding-top: 20px;
+    h4 {
+      color: $theme-dark;
+      font-size: 24px;
+      line-height: 1.8rem;
+    }
+  }
+}
+.payment-system-wrapper {
+  max-width: 1374px;
+  margin: 0 auto;
+}
+.pay-info-wrap {
+  max-width: 860px;
+  .payment-system {
+    margin-bottom: 40px;
+    padding: 30px 0;
+    border-top: 1px dashed $theme-dark;
+    border-bottom: 1px dashed $theme-dark;
+    .money-desc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    h4 {
+      font-weight: 600;
+      line-height: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+.single-pay {
+  input[type='radio'] {
+    border: 1px solid $black-dark !important;
+    width: 17px;
+    height: 17px;
+    appearance: none;
+    border-radius: 50%;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: $black-dark;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+    &:checked {
+      &::before {
+        display: block;
+      }
+    }
+  }
+  span {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    @include mq(sm) {
+      margin-left: 10px;
+    }
+  }
+  p {
+    padding-left: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+}
+.agree-terms {
+  label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  input[type='checkbox'] {
+    background-color: none;
+    appearance: none;
+    border: 2px solid $black-light !important;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    @include mq(sm) {
+      width: 24px;
+      height: 24px;
+    }
+    &::after {
+      font-family: 'Font Awesome 6 Free';
+      content: '\f00c';
+      font-size: 20px;
+      color: $black-light;
+      font-weight: 800;
+      display: none;
+      @include mq(sm) {
+        font-size: 12px;
+      }
+    }
+    &:checked {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    @include mq(sm) {
+      margin-top: 20px;
+      font-size: 15px;
+      padding: 12px 15px;
+    }
+  }
+}

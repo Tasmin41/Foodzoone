@@ -1,0 +1,886 @@
+.home2-banner {
+    padding: 342px 0px 242px 0;
+    position: relative;
+    z-index: 1;
+    @include mq(lg){
+      padding: 280px 0px 190px 0;
+    }
+    @include mq(md) {
+      padding: 250px 0px 170px 0;
+    }
+    @include mq(xs) {
+      padding: 200px 0px 100px 0;
+    }
+    @include mq(xs) {
+      padding: 150px 0px 70px 0;
+    }
+    &::before {
+      background: rgba(26, 40, 49, 0.85);
+      mix-blend-mode: multiply;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .banner2-desc {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 3.5rem;
+      color: $white-dark;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      @include mq(xs) {
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 2rem;
+      }
+      @include mq(sm) {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 2rem;
+      }
+    }
+    h2 {
+      font-family: $heading-fonts;
+      font-size: 150px;
+      font-weight: 400;
+      line-height: 10rem;
+      color: $white-dark;
+      margin-bottom: 20px;
+      @include mq(lg) {
+        font-size: 130px;
+      }
+      @include mq(md) {
+        font-size: 100px;
+        line-height: 6rem;
+      }
+      @include mq(xs) {
+        font-size: 70px;
+        margin-bottom: 15px;
+        line-height: 3.5rem;
+      }
+      @include mq(sm) {
+        font-size: 54px;
+        line-height: 3.5rem;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 2rem;
+      color: $white-dark;
+      max-width: 530px;
+      margin: 0 auto;
+      @include mq(sm) {
+        font-size: 16px;
+      }
+    }
+    a {
+      display: inline-block;
+      border-radius: 100px;
+      background-color: $thmV2;
+      color: $black-dark;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+  }
+  //about scss starts
+  .about2-area {
+    @include bgImg;
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+    }
+  }
+  .about2-desc-wrapper {
+    max-width: 802px;
+    padding: 100px 0;
+    @include mq(sm) {
+      width: 100%;
+    }
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+    .about2-desc {
+      padding: 0 84px 31px 0;
+      position: relative;
+      z-index: 1;
+      @include mq(sm) {
+        padding: 0;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: 0;
+        background-color: $thmV2;
+        width: 230px;
+        height: 350px;
+        z-index: -1;
+        @include mq(xs) {
+          width: 150px;
+          right: 30px;
+        }
+        @include mq(sm) {
+          display: none;
+        }
+      }
+      .about2-shape {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        transform: translateY(-50%);
+        @include mq(sm) {
+          display: none;
+        }
+      }
+      .about2-content {
+        padding: 100px;
+        background-color: $black-dark;
+        color: $white-dark;
+  
+        @include mq(md) {
+          padding: 50px;
+        }
+        @include mq(sm) {
+          padding: 30px;
+        }
+        .about-desc {
+          @include about-desc($thmV2);
+          h4 {
+            color: $white-dark;
+            @include mq(sm) {
+              font-size: 18px;
+            }
+          }
+          p {
+            @include mq(sm) {
+              font-size: 16px;
+            }
+          }
+          ul {
+            li {
+              color: $thmV2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-section-title {
+    margin-bottom: 40px;
+    @include mq(xs) {
+      margin-bottom: 20px;
+    }
+    .about2-title {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      @include mq(xs) {
+        gap: 10px;
+      }
+      h2 {
+        line-height: 3.5rem;
+        font-family: $heading-fonts;
+        font-weight: 400;
+        color: $thmV2;
+        @include mq(sm) {
+          line-height: 2rem;
+          font-size: 24px;
+        }
+      }
+      .s-line1,
+      .s-line2 {
+        span {
+          width: 35px;
+          height: 2px;
+          background-color: $thmV2;
+          margin-bottom: 15px;
+          display: block;
+          @include mq(sm){
+            margin-bottom: 8px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+            width: 15px;
+          }
+        }
+      }
+      .s-line1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5rem;
+      @include mq(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+  //about scss ends
+  
+  //menu scss
+  .Menu2-area {
+    background-color: $black-dark;
+    position: relative;
+    z-index: -1;
+    padding: 100px 0;
+    @include mq(sm) {
+      padding: 50px 0;
+    }
+    .menu2Shape {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .about-section-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: $thmV2;
+        margin-top: 20px;
+        text-align: center;
+        @include mq(sm) {
+          margin-top: 10px;
+        }
+      }
+      .about2-title {
+        .s-line1,
+        .s-line2 {
+          span {
+            background-color: $white-dark;
+          }
+        }
+        h2 {
+          color: $white-dark;
+          @include mq(sm) {
+            font-size: 24px;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+    .review-btn {
+      a {
+        background-color: $thmV2;
+        color: $black-dark;
+        font-weight: 600;
+        border-radius: 100px;
+      }
+    }
+  }
+  .menu2-wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    .singleMenuItems {
+      h2 {
+        color: $thmV2;
+      }
+      .menuContain {
+        border-bottom: 1px dashed $thmV2;
+        .descMenu {
+          .boldh5 {
+            margin-bottom: 10px !important;
+            display: block;
+          }
+        }
+  
+        &:last-child {
+          margin-bottom: 0;
+          .menuP {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .contentWrap_line:after {
+      right: 0;
+      background-color: $thmV2;
+      height: 514px;
+      top: 50px;
+    }
+  }
+  //menu scss ends
+  //reservation scss starts from here
+  .reservation-areaV3,
+  .reservation-areaV2 {
+    @include mq(sm) {
+      padding: 50px 0;
+    }
+  }
+  .reservationV2,
+  .working-process2,
+  .home-review,
+  .expert-chef2 {
+    .about-section-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: $black-dark;
+        margin-top: 20px;
+        text-align: center;
+        @include mq(sm) {
+          margin-top: 10px;
+        }
+      }
+      .about2-title {
+        .s-line1,
+        .s-line2 {
+          span {
+            background-color: $thmV2;
+          }
+        }
+        h2 {
+          color: $thmV2;
+        }
+      }
+    }
+  }
+  .reservation-wrap2 {
+    max-width: 940px;
+    margin: 0 auto;
+    .form-top {
+      h4 {
+        color: $thmV2;
+      }
+      .all-form {
+        .input-group {
+          @include mq(sm) {
+            height: 52px;
+          }
+          input {
+            background-color: $white-dark;
+          }
+          ::placeholder {
+            color: $black-light;
+          }
+          .input-group-text {
+            background-color: $thmV2;
+            i {
+              color: $white-dark;
+            }
+          }
+        }
+        .nice-select {
+          background-color: $white-dark;
+          padding: 10px;
+          .list {
+            color: $black-dark;
+          }
+          .current {
+            color: $black-light;
+            display: block;
+          }
+          &:before {
+            background-color: $thmV2;
+          }
+        }
+        .form-group {
+          input {
+            padding: 20px;
+          }
+        }
+      }
+      .input-group
+        > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-left: 0px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+      }
+      .input-group.date {
+        .input-group-addon {
+          background-color: $thmV2;
+          border: none;
+        }
+      }
+      .glyphicon.glyphicon-calendar {
+        font-size: 20px;
+        color: $color_1;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+      a {
+        display: inline-block;
+        border-radius: 100px;
+        background-color: $thmV2;
+        color: $black-dark;
+      }
+    }
+    .form-bottom {
+      .query {
+        h4 {
+          color: $thmV2;
+        }
+      }
+      .form-contact {
+        button {
+          background-color: $thmV2;
+        }
+      }
+    }
+    .reservation-form {
+      margin-top: 0;
+    }
+  }
+  //reservation scss ends
+  //working process scss starts from here
+  .working-process2 {
+    padding-top: 100px;
+    @include mq(xs) {
+      padding-top: 50px;
+    }
+  }
+  .process2-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include mq(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mq(xs) {
+      grid-template-columns: 1fr;
+    }
+    .processing-wrapper {
+      width: 100%;
+      border-radius: 0;
+      height: 700px;
+      padding: 311px 20px;
+      @include mq(md) {
+        height: 600px;
+        padding: 200px 20px;
+      }
+      @include mq(sm) {
+        height: 300px;
+        padding: 80px 20px;
+      }
+      &::before {
+        border-radius: 0;
+      }
+    }
+  }
+  //working process scss ends
+  //review scss starts
+  .home-review2 {
+    padding: 100px 0px 318px 0;
+    @include mq(lg) {
+      padding: 100px 0px 200px 0;
+    }
+    @include mq(xs) {
+      padding: 50px 0px 100px 0;
+    }
+    .hme-ReviewSlider {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0;
+      &.owl-carousel {
+        .owl-nav {
+          button {
+            color: $black-dark;
+            &.owl-next {
+              &:hover {
+                color: $thmV2;
+              }
+            }
+            &.owl-prev {
+              &:hover {
+                color: $thmV2;
+              }
+            }
+          }
+        }
+      }
+      .single-rvw-slide {
+        p {
+          font-family: $heading-fonts;
+          color: $black-dark;
+        }
+      }
+    }
+    .single-rvw-slide {
+      .cotation {
+        i {
+          color: $thmV2;
+        }
+      }
+      p {
+        color: $black-dark;
+      }
+      span {
+        background-color: $thmV2;
+      }
+      .name {
+        color: $black-dark;
+        a {
+          font-weight: 600;
+          color: $black-dark;
+        }
+      }
+    }
+  }
+  //review scss ends
+  //expert chef
+  .expert-chef2 {
+    @include bgImg;
+    padding: 100px 0px 0px 0px;
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+    .chefWrapper2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 30px;
+      @include mq(lg) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include mq(sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .single-chef2 {
+      border-radius: 0 0 30px 30px;
+      img {
+        @include mq(lg) {
+          width: 100%;
+        }
+      }
+      &:hover {
+        .chef-description {
+          .shape-svg {
+            img,
+            svg {
+              path {
+                fill: $thmV2;
+              }
+            }
+          }
+          .descript {
+            .media-buttons {
+              .media {
+                i {
+                  color: $white-dark;
+                }
+              }
+            }
+            .name {
+              span,
+              p {
+                color: $white-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+    .chef-description {
+      position: relative;
+      z-index: 2;
+      margin-top: -30px;
+      .shape-svg {
+        img,
+        svg {
+          @include mq(lg) {
+            width: 100%;
+          }
+          path {
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    .descript {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -38%);
+      text-align: center;
+      width: 100%;
+    }
+    .media-buttons {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      .media {
+        border: none;
+        i {
+          color: $black-light;
+        }
+        &:hover {
+          background-color: $white-dark !important;
+          i {
+            color: $black-light !important;
+          }
+        }
+      }
+    }
+    .name {
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        display: block;
+      }
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+    .review-btn {
+      a {
+        background-color: $thmV2;
+        color: $black-dark;
+        font-weight: 600;
+        border-radius: 100px;
+      }
+    }
+  }
+  //best resaosn to choose
+  .best-reason {
+    padding: 100px 0;
+    @include bgImg;
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(26, 40, 49, 0.5);
+      mix-blend-mode: multiply;
+      z-index: -1;
+    }
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+    .best-title {
+      margin-left: 110px;
+      @include mq(lg) {
+        margin-left: 0;
+      }
+      h2 {
+        font-family: $heading-fonts;
+        line-height: 3.5rem;
+        margin-bottom: 50px;
+        color: $thmV2;
+        @include mq(sm) {
+          font-size: 24px;
+          line-height: 2rem;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .best-reason-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    row-gap: 70px;
+    max-width: 773px;
+    margin-left: 110px;
+    @include mq(lg) {
+      margin-left: 0;
+    }
+    @include mq(xs) {
+      grid-gap: 50px;
+    }
+    @include mq(sm) {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+    .single-best {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 15px 1fr;
+      position: relative;
+      &::before {
+        position: absolute;
+        left: 8px;
+        top: 5px;
+        width: 2px;
+        height: calc(100% + 70px);
+        background-color: $thmV2;
+        content: '';
+      }
+      &:nth-child(4) {
+        &::before {
+          height: 100%;
+          @include mq(sm) {
+            height: calc(100% + 70px);
+          }
+        }
+      }
+      &:last-child {
+        &::before {
+          height: 100%;
+        }
+      }
+      .dot {
+        width: 15px;
+        height: 15px;
+        background-color: $thmV2;
+        border-radius: 50%;
+        display: block;
+        margin-top: 5px;
+      }
+      .best-desc {
+        h4 {
+          line-height: 2.2rem;
+          font-family: $heading-fonts;
+          margin-bottom: 24px;
+          color: $thmV2;
+          @include mq(sm) {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          font-size: 18px;
+          line-height: 2rem;
+          color: $white-dark;
+          @include mq(sm) {
+            font-size: 16px;
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  
+  //subscribe-area
+  .subscribe2 {
+    .sectionTitle {
+      h2 {
+        color: $thmV2;
+      }
+      span {
+        background-color: $thmV2;
+      }
+    }
+    .form {
+      button {
+        background-color: $thmV2;
+        color: $black-dark;
+      }
+    }
+  }
+  //subscribe area ends
+  //footer
+  .footer2-area {
+    &::before {
+      background: rgba(6, 12, 26, 0.9) !important;
+      mix-blend-mode: normal;
+      opacity: 1;
+    }
+    .footer-part-1 {
+      .row {
+        h5 {
+          color: $thmV2;
+        }
+      }
+      .media-buttons {
+        a {
+          border: 1px solid $thmV2;
+          i {
+            color: $white-dark;
+          }
+          &:hover {
+            background-color: $thmV2;
+            i {
+              color: $black-dark;
+            }
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &:hover {
+          color: $thmV2 !important;
+          a {
+            color: $thmV2 !important;
+          }
+        }
+      }
+    }
+    .customer-support,
+    .address,
+    .link,
+    .open-hour {
+      ul {
+        li {
+          &:hover {
+            color: $thmV2 !important;
+            a {
+              color: $thmV2 !important;
+            }
+          }
+        }
+      }
+    }
+    .address {
+      ul {
+        li {
+          i {
+            color: $thmV2;
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &:hover {
+          color: $thmV2 !important;
+          a {
+            color: $thmV2 !important ;
+          }
+          &::marker {
+            color: $thmV2 !important;
+          }
+        }
+      }
+    }
+    .subscribe {
+      p {
+        color: $thmV2;
+      }
+      .input-group {
+        height: 60px;
+        @include normalInpt($thmV2, $white-dark);
+        max-width: 400px;
+        border: 1px solid $thmV2 !important;
+      }
+    }
+  }
+
+  .top2{
+    background-color:$thmV2;
+    i{
+      color: $black-dark;
+    }
+  }

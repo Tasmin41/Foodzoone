@@ -1,0 +1,288 @@
+.coming-soon-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mq(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .countdown-wrap {
+    @include bgImg;
+    width: 100%;
+    height: 960px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $black-dark;
+      opacity: 0;
+      visibility: hidden;
+      mix-blend-mode: multiply;
+      @include mq(md) {
+        visibility: visible;
+        opacity: 0.9;
+      }
+    }
+    @include mq(lg) {
+      height: 840px;
+    }
+    @include mq(md) {
+      height: 700px;
+    }
+    @include mq(xs) {
+      height: 575px;
+    }
+    @include mq(sm) {
+      height: 500px;
+    }
+  }
+  .count-down {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 535px;
+    width: 160px;
+    background-color: $white-dark;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px 0 0 10px;
+    @include mq(md) {
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      height: 160px;
+      width: 100%;
+      background-color: $white-dark;
+      transform: none;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      border-radius: 0;
+    }
+    @include mq(xs) {
+      padding: 0 15px;
+      gap: 10px;
+      height: 130px;
+    }
+    .single-counter {
+      text-align: center;
+      height: 100px;
+      width: 100px;
+      border: 1px solid $theme-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 10px;
+      h3 {
+        font-weight: 700;
+        line-height: 2rem;
+        color: $theme-dark;
+        margin-bottom: 5px;
+        @include mq(xs) {
+          font-size: 24px;
+          line-height: 1.2rem;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: $theme-dark;
+        font-weight: 500;
+        line-height: 2rem;
+        @include mq(xs) {
+          font-size: 15px;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+  .count-desc {
+    position: relative;
+    padding-left: 50px;
+    @include mq(md) {
+      position: absolute;
+      padding: 70px 30px 30px 30px;
+      top: auto;
+      width: 100%;
+    }
+    .shape1,
+    .shape2,
+    .shape3,
+    .shape4,
+    .shape5 {
+      position: absolute;
+      z-index: 2;
+      @include mq(md) {
+        display: none;
+      }
+    }
+    .shape1 {
+      top: 103px;
+      left: 124px;
+      @include mq(xl) {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .shape2 {
+      bottom: 52px;
+      right: 50%;
+      @include mq(xl) {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .shape3 {
+      left: 68px;
+      bottom: 156px;
+      @include mq(xl) {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .shape4 {
+      top: 75px;
+      right: 242px;
+      @include mq(xl) {
+        img {
+          width: 60px;
+        }
+      }
+      @include mq(lg) {
+        right: 150px;
+      }
+    }
+    .shape5 {
+      bottom: 200px;
+      right: 48px;
+      @include mq(xl) {
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+  .count-content {
+    max-width: 788px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .desc {
+    max-width: 490px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    @include mq(md) {
+      left: 100px;
+      transform: none;
+    }
+    @include mq(xs) {
+      left: 10px;
+    }
+    h2 {
+      color: $theme-dark;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 4rem;
+      margin-bottom: 10px;
+      @include mq(sm) {
+        font-size: 24px;
+        line-height: 2rem;
+      }
+    }
+    p {
+      color: $black-light;
+      line-height: 1.5rem;
+      font-size: 16px;
+      margin-bottom: 30px;
+      @include mq(md) {
+        color: $white-dark;
+      }
+      @include mq(xs) {
+        font-size: 14px;
+        line-height: 1.2rem;
+        margin-bottom: 20px;
+      }
+    }
+    a {
+      color: $black-dark;
+      text-decoration: underline;
+      line-height: 2.2rem;
+      max-width: 266px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+      @include mq(md) {
+        color: $white-dark;
+      }
+      @include mq(xs) {
+        font-size: 20px;
+        line-height: 1.5rem;
+      }
+    }
+    .input-group {
+      margin-bottom: 0px;
+      max-width: 400px;
+      @include mq(md) {
+        color: $white-dark;
+        ::placeholder {
+          color: $white-dark;
+        }
+      }
+      @include mq(xs) {
+        max-width: 100%;
+      }
+      .input-group-text {
+        background-color: $theme-dark;
+        border: none;
+        border-radius: 0;
+        width: 60px;
+        i {
+          width: 100%;
+          font-size: 20px;
+          color: #fff;
+          @include mq(sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .form-control {
+      padding: 20px;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 19px;
+      font-family: 'Raleway', sans-serif;
+      background-color: transparent;
+      border: 1px solid $white-dark;
+      border-right: none;
+      @include mq(md) {
+        color: $white-dark;
+      }
+      @include mq(sm) {
+        padding: 15px;
+      }
+    }
+  }
+  

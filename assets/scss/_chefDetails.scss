@@ -1,0 +1,168 @@
+.award-wrapper {
+    max-width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0 100px 0;
+    @include mq(xs) {
+      padding: 20px 0 50px 0;
+    }
+    @include mq(sm) {
+      justify-content: center;
+    }
+  }
+  
+  .chef-details {
+    @include mq(xs) {
+      padding-top: 20px;
+    }
+  }
+  .chefDet-wrapper {
+    position: relative;
+    .shape1,
+    .shape2,
+    .shape3,
+    .shape4,
+    .shape5 {
+      position: absolute;
+      @include mq(xs) {
+        display: none;
+      }
+    }
+    .shape1 {
+      top: 0;
+      left: 150px;
+      @include mq(xl) {
+        left: 90px;
+      }
+      @include mq(lg) {
+        left: 75px;
+      }
+    }
+    .shape2 {
+      left: 0;
+      bottom: 60px;
+      img {
+        @include mq(md) {
+          width: 40px;
+        }
+      }
+    }
+    .shape3 {
+      top: 0;
+      right: 280px;
+      @include mq(lg) {
+        right: 160px;
+      }
+      @include mq(md) {
+        right: 80px;
+      }
+    }
+    .shape4 {
+      top: 100px;
+      right: 0;
+      img {
+        @include mq(md) {
+          width: 60px;
+        }
+      }
+    }
+    .shape5 {
+      bottom: 0;
+      right: 180px;
+      @include mq(md) {
+        right: 150px;
+      }
+    }
+  }
+  
+  .chefDet-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq(xl) {
+      max-width: 850px;
+    }
+    @include mq(lg) {
+      max-width: 750px;
+    }
+    @include mq(md) {
+      max-width: 610px;
+    }
+    @include mq(xs) {
+      max-width: 100%;
+    }
+    @include mq(sm) {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .chef-img {
+      flex-basis: 50%;
+      @include mq(xl) {
+        flex-basis: 33%;
+      }
+      img {
+        border-radius: 50%;
+        background-color: $theme-dark;
+        @include mq(sm) {
+          max-width: 250px;
+        }
+      }
+    }
+    .chef-description {
+      flex-basis: 50%;
+      @include mq(xl) {
+        flex-basis: 60%;
+      }
+    }
+  }
+  .chef-description {
+    .name {
+      a {
+        color: $black-dark;
+      }
+      p {
+        margin-bottom: 30px;
+        @include mq(xl) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 2rem;
+      margin-bottom: 30px;
+      @include mq(xl) {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+    .media-buttons {
+      display: flex;
+      @include mq(sm) {
+        align-items: center;
+        justify-content: center;
+      }
+      .media {
+        border-color: $theme-dark;
+        transition: 0.3s;
+        &:hover {
+          background-color: $theme-dark;
+          border: none;
+          i {
+            color: $white-dark;
+          }
+        }
+        i {
+          color: $theme-dark;
+        }
+      }
+    }
+  }
+  

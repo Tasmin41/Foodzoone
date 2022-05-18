@@ -1,0 +1,203 @@
+.profile-area {
+    @include mq(md) {
+      padding: 50px 0;
+    }
+  }
+  .profile-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .user-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include mq(xs) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  .edit {
+    @include mq(md) {
+      flex-basis: 20%;
+    }
+    @include mq(xs) {
+      display: inherit;
+    }
+    a {
+      color: $black-light;
+      display: block;
+      padding: 12px 16px;
+      border: 1px solid $black-light;
+      @include mq(xs) {
+        font-size: 14px;
+      }
+    }
+  }
+  .user-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    @include mq(md) {
+      gap: 30px;
+    }
+    @include mq(xs){
+      justify-content: flex-start;
+    }
+    @include mq(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .user-img{
+      @include mq(sm) {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+    }
+    img {
+      border-radius: 10px;
+      @include mq(xs) {
+        max-width: 200px;
+      }
+    }
+    .address {
+      h5 {
+        font-size: 24px;
+        line-height: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: $black-light;
+      }
+      p {
+        margin-bottom: 40px;
+        color: $black-light;
+        @include mq(xs) {
+          margin-bottom: 20px;
+        }
+      }
+      ul {
+        li {
+          @include mq(sm) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .table-title {
+    margin-bottom: 50px;
+    h4 {
+      position: relative;
+      line-height: 2rem;
+      padding-left: 55px;
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 12px;
+        background-color: $theme-dark;
+        width: 35px;
+        height: 2px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 26px;
+        width: 15px;
+        height: 2px;
+        background-color: $theme-dark;
+      }
+    }
+  }
+  .pro-table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+      @include mq(md) {
+        display: none;
+      }
+      tr {
+        th {
+          padding-bottom: 20px;
+          border-bottom: 1px dashed $theme-dark;
+          font-size: 18px;
+          font-weight: 600;
+          color: $theme-dark;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 30px 0;
+          border-bottom: 1px solid $gray;
+          font-size: 20px;
+          color: $black-light;
+          @include mq(md) {
+            padding: 15px 0;
+            font-size: 16px;
+          }
+          @include mq(sm) {
+            font-size: 14px;
+          }
+  
+          p {
+            color: $theme-dark;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          h6 {
+            font-size: 20px;
+            color: $black-dark;
+            line-height: 2rem;
+            font-weight: 600;
+            @include mq(xs) {
+              font-size: 18px;
+              line-height: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-wrapper {
+    @include mq(xs) {
+      margin-top: 30px;
+    }
+  }
+  
+  @include mq(md) {
+    .pro-table,
+    .pro-table tbody,
+    .pro-table tr,
+    .pro-table td {
+      display: block;
+      width: 100%;
+    }
+    .pro-table tr {
+      margin-bottom: 30px;
+      background-color: $gray-light;
+      padding-right: 15px;
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+  
+        &::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          padding-left: 15px;
+          width: 50%;
+          text-align: left;
+          font-weight: 600;
+          color: $theme-dark;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  

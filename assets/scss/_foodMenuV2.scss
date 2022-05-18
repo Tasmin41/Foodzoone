@@ -1,0 +1,27 @@
+.allmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      @include mq(md) {
+        flex-direction: column;
+      }
+    }
+    @include mq(md) {
+      flex-direction: column;
+    }
+    .singleMenuItems {
+      flex-basis: 48%;
+      .menuContain {
+        width: 100%;
+      }
+    }
+    .menu-img {
+      flex-basis: 48%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  

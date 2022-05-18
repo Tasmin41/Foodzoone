@@ -1,0 +1,112 @@
+.about-area {
+	@include mq(xs) {
+	  padding: 50px 0;
+	}
+	.about-wrapper {
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-items: center;
+	  justify-content: space-between;
+	  max-width: 1100px;
+	  margin: 0 auto;
+	  @include mq(xs) {
+		flex-direction: column;
+	  }
+	  .about-inner {
+		flex-basis: 43%;
+	  }
+	  .about-desc {
+		flex-basis: 48%;
+		@include about-desc($theme-dark);
+		@include mq(xs) {
+		  margin-top: 30px;
+		}
+	  }
+	}
+  }
+  
+  .about-counterup {
+	padding: 75px 0;
+	@include mq(xs) {
+	  padding: 50px 0;
+	}
+	@include bgImg;
+	position: relative;
+	z-index: 1;
+	@include overlay(0.75);
+	&::before {
+	  background: linear-gradient(
+		180deg,
+		rgba(234, 84, 85, 0.85) 0%,
+		rgba(0, 0, 0, 0.85) 100%
+	  );
+	  mix-blend-mode: multiply;
+	  transform: rotate(180deg);
+	}
+	.counterupWrap {
+	  max-width: 922px;
+	  margin: 0 auto;
+	  display: grid;
+	  grid-template-columns: repeat(4, 1fr);
+	  grid-gap: 30px;
+	  @include mq(xs) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	  }
+	  .single-counter {
+		background-color: rgba(255, 255, 255, 0.1);
+		border: 1px solid $white-dark;
+		box-sizing: border-box;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 53px 0;
+		color: $white-dark;
+		@include mq(md) {
+		  padding: 30px 0;
+		}
+		h2 {
+		  font-size: 48px;
+		  @include mq(md) {
+			font-size: 36px;
+		  }
+		  @include mq(sm) {
+			font-size: 24px;
+		  }
+		  &.counter.plus {
+			position: relative;
+			span {
+			  position: absolute;
+			  top: -14px;
+			  font-weight: normal;
+			}
+		  }
+		}
+		p {
+		  line-height: 2rem;
+		}
+	  }
+	}
+  }
+  
+  .chef-award {
+	&::before {
+	  background: linear-gradient(
+		180deg,
+		rgba(234, 84, 85, 0.85) 0%,
+		rgba(0, 0, 0, 0.85) 100%
+	  );
+	  mix-blend-mode: multiply;
+	}
+	.chef-wrapper {
+	  .foodTitle {
+		color: $white-dark;
+		.lobsterHeading {
+		  color: $white-dark;
+		}
+	  }
+	}
+  }
+  

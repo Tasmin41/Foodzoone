@@ -1,0 +1,192 @@
+.reservation-area {
+    @include bgImg;
+    position: relative;
+    z-index: 2;
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(234, 84, 85, 0.85) 100%
+      );
+      mix-blend-mode: normal;
+      transform: rotate(-180deg);
+    }
+    @include overlay(0.7);
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+      margin-left: 0px;
+      border-top-left-radius: unset;
+      border-bottom-left-radius: unset;
+    }
+  }
+  .reserve-wrap {
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+  }
+  .form-top {
+    padding: 50px 55px;
+    max-width: 940px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) -13.7%,
+      rgba(234, 84, 85, 0.8) 206.35%
+    );
+    @include mq(sm) {
+      padding: 30px;
+    }
+    h4 {
+      margin-bottom: 30px;
+      font-family: 'Lobster', cursive;
+      color: $white-dark;
+      @include mq(sm) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .all-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include mq(xs) {
+      grid-template-columns: 1fr;
+    }
+    gap: 30px;
+    margin-bottom: 40px;
+    @include mq(sm) {
+      gap: 15px;
+    }
+    .input-group {
+      margin-bottom: 0px;
+      max-width: 400px;
+      height: 60px;
+      @include mq(xs) {
+        max-width: 100%;
+      }
+      @include mq(sm) {
+        height: 52px;
+      }
+      .input-group-text {
+        background-color: $theme-dark;
+        border: none;
+        border-radius: 0;
+        width: 60px;
+        i {
+          width: 100%;
+          font-size: 20px;
+          color: #fff;
+          @include mq(sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .input-col {
+      .form-control {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 19px;
+        font-family: 'Raleway', sans-serif;
+        background-color: transparent;
+        border: 1px solid $white-dark;
+        border-right: none;
+        border-radius: 0;
+        @include mq(sm) {
+          padding: 10px;
+        }
+      }
+      p {
+        color: $white-dark;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5rem;
+        @include mq(sm) {
+          margin-bottom: 10px;
+        }
+      }
+      ::placeholder {
+        color: $white-dark;
+        @include mq(sm) {
+          font-size: 14px;
+        }
+      }
+    }
+    .nice-select {
+      display: flex;
+      align-items: center;
+      height: 62px;
+      width: 100%;
+      background-color: transparent;
+      color: $white-dark;
+      border: 1px solid $white-dark;
+      border-radius: 0;
+      @include mq(sm) {
+        padding: 10px;
+        height: 52px;
+      }
+      &::after {
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        height: 12px;
+        margin-top: -4px;
+        top: 50%;
+        width: 12px;
+        right: 25px;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        background-color: $theme-dark;
+        right: -1px;
+        top: -1px;
+        height: calc(100% + 2px);
+        right: -1px;
+      }
+      .list {
+        margin-top: 0px;
+        width: 100%;
+      }
+      .option {
+        border-bottom: 1px solid #ddd;
+        color: $black-dark;
+      }
+    }
+    .input-group.date .input-group-addon {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      background-color: $theme-dark;
+      height: 100%;
+      width: 60px;
+      top: 0px;
+    }
+    .glyphicon.glyphicon-calendar {
+      font-size: 20px;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      @include mq(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+  .form-group {
+    .input-group {
+      input {
+        background-color: transparent;
+        border: 1px solid $white-dark;
+        padding: 20px;
+        @include mq(sm) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  

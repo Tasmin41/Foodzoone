@@ -1,0 +1,71 @@
+.error-area {
+    @include bgImg;
+    @include mq(md) {
+      padding: 50px 0;
+    }
+  }
+  .error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    max-width: 1290px;
+    margin: 0 auto;
+    @include mq(xl) {
+      gap: 50px;
+      max-width: 1000px;
+    }
+    @include mq(lg) {
+      max-width: 900px;
+    }
+    @include mq(md) {
+      gap: 30px;
+    }
+    @include mq(sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .error-img {
+    flex-basis: 60%;
+    @include mq(lg) {
+      flex-basis: 50%;
+    }
+  }
+  .error-desc {
+    flex-basis: 40%;
+    @include mq(lg) {
+      flex-basis: 50%;
+    }
+    h3 {
+      font-weight: 700;
+      color: $black-light;
+    }
+    h2 {
+      font-weight: normal;
+      line-height: 3rem;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: $black-light;
+      margin-bottom: 30px;
+      @include mq(xl) {
+        font-size: 16px;
+      }
+    }
+    a {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 15px 20px 15px 45px;
+      @include mq(lg) {
+        padding: 15px 20px;
+      }
+      @include mq(md) {
+        font-size: 16px;
+      }
+    }
+  }
+  

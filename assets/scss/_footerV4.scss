@@ -1,0 +1,109 @@
+.footerV4 {
+    background-color: #fef3f6;
+    &.footer-area {
+      &::before {
+        background-color: #fef3f6;
+        opacity: 1;
+      }
+      .footerShape {
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        z-index: -1;
+      }
+    }
+    .footer-part-1 {
+      color: $black-dark;
+      @include mq(xs){
+        padding: 50px 0;
+      }
+      .row {
+        h5 {
+          color: $themeV4;
+        }
+      }
+      .media-buttons {
+        a {
+          border: 1px solid $black-dark;
+          i {
+            color: $black-dark;
+          }
+          &:hover {
+            background-color: $themeV4;
+            i {
+              color: $white-dark;
+            }
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &:hover {
+          color: $themeV4;
+          a {
+            color: $themeV4;
+          }
+        }
+      }
+    }
+    .customer-support,
+    .address,
+    .link,
+    .open-hour {
+      ul {
+        li {
+          &:hover {
+            color: $themeV4;
+            a {
+              color: $themeV4;
+            }
+          }
+          a {
+            color: $black-dark;
+          }
+        }
+      }
+    }
+    .address {
+      ul {
+        li {
+          i {
+            color: $themeV4;
+          }
+        }
+      }
+    }
+    .sitemap ul {
+      li {
+        &::marker {
+          color: $black-dark;
+        }
+        color: $black-dark;
+        &:hover {
+          color: $themeV4;
+          a {
+            color: $themeV4;
+          }
+          &::marker {
+            color: $themeV4;
+          }
+        }
+        a {
+          color: $black-dark;
+        }
+      }
+    }
+    .subscribe {
+      p {
+        color: $themeV4;
+      }
+      .input-group {
+        height: 60px;
+        @include normalInpt($themeV4, $white-dark);
+        max-width: 400px;
+        border: 1px solid $themeV4 !important;
+      }
+    }
+  }
+  

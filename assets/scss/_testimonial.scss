@@ -1,0 +1,110 @@
+.testimonial-banner {
+    @include bgImg;
+    padding: 46px 0;
+    @include mq(xs) {
+      padding: 20px 0;
+    }
+  }
+  .review-area {
+    .review-part {
+      max-width: 1310px;
+      margin: 0 auto;
+      padding: 100px 0;
+      @include mq(xs) {
+        padding: 50px 0;
+      }
+      .review {
+        margin-bottom: 50px;
+        .text-top {
+          margin-bottom: 30px;
+          h5 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+          }
+        }
+        .review-bottom {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          .test-review {
+            padding: 50px 57px 50px 42px;
+            @include mq(sm) {
+              padding: 20px;
+            }
+            position: relative;
+            border: 1px solid rgba(238, 238, 238, 1);
+            .cotation {
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              background-color: $theme-dark;
+              height: 50px;
+              width: 50px;
+              @include mq(sm) {
+                width: 32px;
+                height: 32px;
+                padding: 10px;
+              }
+              padding: 15px;
+              i {
+                font-size: 25px;
+                color: $white-dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mq(sm) {
+                  font-size: 18px;
+                }
+              }
+            }
+            .star {
+              i {
+                color: #ffc807;
+                font-size: 18px;
+                margin-right: 9px;
+                margin-bottom: 15px;
+              }
+            }
+            p {
+              font-size: 16px;
+              line-height: 25.6px;
+              font-style: normal;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .review-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          padding: 17px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 18.78px;
+          font-style: normal;
+          background-color: $theme-dark;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  //responsive testimonial
+  @media (max-width: 575.98px) {
+    .review-area {
+      .review-part {
+        padding: 50px 0;
+      }
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .review-bottom {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+  }
+  

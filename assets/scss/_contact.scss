@@ -1,0 +1,151 @@
+.contact-area {
+    @include bgImg;
+    position: relative;
+    z-index: 2;
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(234, 84, 85, 0.85) 100%
+      );
+      mix-blend-mode: normal;
+      transform: rotate(-180deg);
+    }
+    @include overlay(0.7);
+  }
+  .get-touchInner {
+    @include mq(xs) {
+      padding: 50px 0;
+    }
+  }
+  .row-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+    gap: 20px;
+    .media-buttons {
+      display: flex;
+      a:hover {
+        background-color: $theme-dark;
+        border: none;
+        i {
+          color: $white-dark;
+        }
+      }
+    }
+    @include mq(xs){
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+    }
+    @include mq(sm){
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+  .contact-desc {
+    @include mq(xs) {
+      padding: 30px 0;
+    }
+  }
+  .get-touch {
+    max-width: 585px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) -13.7%,
+      rgba(234, 84, 85, 0.8) 206.35%
+    );
+    border-radius: 10px;
+    padding: 60px 50px 50px;
+    margin: 0 auto;
+    color: $white-dark;
+    @include mq(xs) {
+      padding: 30px;
+    }
+    h5 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+    textarea#contactMsg {
+      width: 410px;
+      height: 140px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 20px;
+      resize: none;
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+    ::placeholder {
+      color: $white-dark;
+    }
+  }
+  .contact-email {
+    margin-bottom: 20px;
+    p {
+      font-weight: 600;
+      line-height: 1.5rem;
+      margin-bottom: 15px;
+    }
+    input {
+      width: 410px;
+      height: 60px;
+      padding: 20px;
+      background-color: transparent;
+      border: 1px solid $white-dark;
+      @include mq(sm) {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+    ::placeholder {
+      color: $white-dark;
+    }
+  }
+  .contact-desc {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) -30.83%,
+      rgba(234, 84, 85, 0.7) 273.57%
+    );
+    color: $white-dark;
+    .address {
+      ul {
+        li {
+          display: inline;
+          margin-right: 40px;
+          &:last-child {
+            margin-right: 0;
+          }
+          @include mq(xl) {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .contact-info {
+    h5 {
+      font-weight: 600;
+      line-height: 2rem;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.5rem;
+      max-width: 300px;
+      @include mq(xs) {
+        max-width: 100%;
+      }
+    }
+  }
+  

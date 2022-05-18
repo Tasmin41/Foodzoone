@@ -1,0 +1,168 @@
+@mixin mq($value) {
+    @if $value== 'xxl' {
+      @media (max-width: 1600px) {
+        @content;
+      }
+    }
+    @if $value== 'xl' {
+      @media (max-width: 1399px) {
+        @content;
+      }
+    }
+    @if $value== 'lg' {
+      @media (max-width: 1199px) {
+        @content;
+      }
+    }
+    @if $value== 'md' {
+      @media (max-width: 992px) {
+        @content;
+      }
+    }
+    @if $value== 'xs' {
+      @media (max-width: 767.98px) {
+        @content;
+      }
+    }
+    @if $value== 'sm' {
+      @media (max-width: 575.98px) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin thm-btnStyle($bg, $clr) {
+    background-color: $bg;
+    color: $clr;
+  }
+  
+  //background image
+  @mixin bgImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @mixin overlay($opacity) {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: $opacity;
+      z-index: -1;
+    }
+  }
+  //media button
+  @mixin socialmed($mediaclr, $hvrClr, $hvrbg, $border) {
+    width: 34px;
+    height: 34px;
+    @include mq(xs) {
+      width: 32px;
+      height: 32px;
+      margin-right: 15px;
+      i {
+        font-size: 16px;
+      }
+    }
+    background-color: transparent;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid $white-dark;
+    &:hover {
+      background-color: $hvrbg;
+      border-color: $border;
+      i {
+        color: $hvrClr;
+      }
+    }
+    i {
+      color: $mediaclr;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  //input common
+  
+  @mixin normalInpt($iconbg, $iconclr) {
+    .input-group {
+      height: 60px;
+    }
+    .form-control {
+      padding: 20px;
+      @include mq(xs) {
+        padding: 10px;
+      }
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $body-fonts;
+      background-color: $gray-light;
+    }
+    .input-group-text {
+      background-color: $iconbg;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      i {
+        width: 100%;
+        color: $iconclr;
+        font-size: 20px;
+      }
+    }
+  }
+  //common about desc
+  @mixin about-desc($descBg) {
+    h4 {
+      margin-bottom: 20px;
+      @include mq(md) {
+        margin-bottom: 15px;
+      }
+    }
+    p,
+    ul {
+      line-height: 26px;
+      @include mq(md) {
+        line-height: 1.5rem;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+      @include mq(md) {
+        margin-bottom: 15px;
+      }
+    }
+    ul {
+      li {
+        margin-left: 15px;
+        @include mq(md) {
+          margin-bottom: 10px;
+        }
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &::before {
+          position: absolute;
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $descBg;
+          top: 7px;
+          left: -10px;
+          @include mq(md) {
+            width: 6px;
+            height: 6px;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,383 @@
+.food-menu {
+	@include bgImg;
+	@include mq(md){
+		padding: 70px 0;
+	}
+	@include mq(xs){
+		padding: 50px 0;
+	}
+  }
+  
+  .menuWrapper {
+	backdrop-filter: blur(40px);
+	border-radius: 20px;
+  }
+  
+  .menu-item {
+	background-color: #fafafa;
+	border-radius: 20px;
+	.nav-tabs {
+	  border-bottom: none;
+	  justify-content: space-between;
+	  align-items: center;
+	  max-width: 1300px;
+	  margin: 0 auto;
+	  padding: 0px 30px;
+  
+	  .nav-link {
+		margin-bottom: 0;
+		background: 0 0;
+		border: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		padding: 50px 0;
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		position: relative;
+		@include mq(lg) {
+		  gap: 10px;
+		  padding: 30px 0;
+		}
+		@include mq(xs){
+			padding: 20px 0;
+		}
+  
+		@include mq(sm) {
+		  padding: 10px 0;
+		}
+		img {
+		  @include mq(lg) {
+			width: 50px;
+		  }
+		  @include mq(md) {
+			display: none;
+		  }
+		}
+  
+		&:before {
+		  position: absolute;
+		  content: '';
+		  left: 50%;
+		  top: 0;
+		  transform: translateX(-50%);
+		  border-right: 24px solid transparent;
+		  border-left: 24px solid transparent;
+		  border-top: 21px solid $theme-dark;
+		  opacity: 0;
+		  visibility: hidden;
+		  @include mq(lg) {
+			border-right: 15px solid transparent;
+			border-left: 15px solid transparent;
+			border-top: 15px solid $theme-dark;
+		  }
+		}
+		&:after {
+		  position: absolute;
+		  content: '';
+		  right: 50%;
+		  bottom: 0;
+		  transform: translateX(50%);
+		  border-right: 24px solid transparent;
+		  border-left: 24px solid transparent;
+		  border-bottom: 21px solid $theme-dark;
+		  opacity: 0;
+		  visibility: hidden;
+		  @include mq(lg) {
+			border-right: 15px solid transparent;
+			border-left: 15px solid transparent;
+			border-bottom: 15px solid $theme-dark;
+		  }
+		}
+		&.active {
+		  &::before,
+		  &::after {
+			opacity: 1;
+			visibility: visible;
+		  }
+		}
+	  }
+	}
+  }
+  
+  .menuContent {
+	h5 {
+	  position: relative;
+	  font-family: $heading-fonts;
+	  margin-bottom: 20px;
+	  color: $black-dark;
+	  @include mq(lg) {
+		margin-bottom: 5px;
+	  }
+	  @include mq(xs) {
+		text-align: end;
+	  }
+	  @include mq(sm) {
+		margin: 0;
+		padding: 20px 0;
+	  }
+	  &::before {
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 18%;
+		background-color: $theme-dark;
+		width: 35px;
+		height: 2px;
+		@include mq(sm) {
+		  display: none;
+		}
+	  }
+	  &::after {
+		position: absolute;
+		content: '';
+		width: 15px;
+		height: 2px;
+		background-color: $theme-dark;
+		left: 0;
+		top: 70%;
+		@include mq(sm) {
+		  display: none;
+		}
+	  }
+	}
+	p {
+	  font-size: 18px;
+	  font-weight: 500;
+	  color: $theme-dark;
+	  @include mq(lg) {
+		font-size: 16px;
+	  }
+	  @include mq(xs) {
+		font-size: 14px;
+	  }
+	  @include mq(sm) {
+		display: none;
+	  }
+	}
+  }
+  
+  .single-menuContent input[type='checkbox'] {
+	background-color: none;
+	appearance: none;
+	border: 1px solid $white-dark;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::after {
+	  font-family: 'Font Awesome 6 Free';
+	  content: '\f00c';
+	  font-size: 20px;
+	  color: $white-dark;
+	  font-weight: 800;
+	  display: none;
+	  @include mq(sm) {
+		font-size: 12px;
+	  }
+	}
+	&:checked {
+	  border-color: $theme-dark !important;
+	  color: $theme-dark;
+	  &::after {
+		display: block;
+		color: $theme-dark;
+	  }
+	  ~ .menuContain {
+		.descMenu {
+		  .menuh5 {
+			color: $theme-dark;
+		  }
+		}
+	  }
+	}
+  }
+  
+  input#check1 {
+	width: 24px;
+	height: 24px;
+	margin-right: 15px;
+	@include mq(sm) {
+	  width: 15px;
+	  height: 15px;
+	  margin: 5px 10px 0 0;
+	}
+  }
+  
+  .Menuitem-wrapper {
+	@include mq(md) {
+	  padding: 30px 0;
+	}
+	.tab-pane {
+	  max-width: 1300px;
+	  margin: 0 auto;
+	  padding: 0px 30px;
+	
+	}
+  }
+  
+  .allMenuItems {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 80px;
+	@include mq(xl) {
+	  grid-gap: 65px;
+	}
+	@include mq(md) {
+	  grid-template-columns: 1fr;
+	  grid-gap: 20px;
+	}
+  }
+  
+  .singleMenuItems h2 {
+	margin-bottom: 40px;
+	@include mq(sm) {
+	  margin-bottom: 20px;
+	  font-size: 24px;
+	}
+  }
+  
+  .single-menuContent {
+	display: flex;
+	margin-bottom: 30px;
+	&:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  .single-menuContent {
+	&:last-child {
+	  .menuContain {
+		border: none;
+	  }
+	}
+  }
+  .s-border {
+	border-bottom: 1px solid $theme-dark !important;
+  }
+  .b-none {
+	border: none !important;
+  }
+  .menuContain {
+	display: flex;
+	justify-content: space-between;
+	width: 520px;
+	color: #fff;
+	border-bottom: 1px dashed $theme-dark;
+	@include mq(xl) {
+	  width: 440px;
+	}
+	@include mq(xl) {
+	  width: 360px;
+	}
+	@include mq(md) {
+	  width: 100%;
+	}
+	.descMenu {
+	  .menuh5 {
+		margin-bottom: 10px;
+		font-size: 24px;
+		font-weight: 500;
+		display: block;
+		@include mq(sm) {
+		  font-size: 18px;
+		}
+	  }
+	  .menuP {
+		margin-bottom: 30px;
+		display: block;
+		font-size: 16px;
+		@include mq(xl) {
+		  margin-bottom: 20px;
+		}
+		@include mq(sm) {
+		  margin-bottom: 10px;
+		  font-size: 15px;
+		}
+	  }
+	}
+	.menu-price {
+	  font-size: 24px;
+	  line-height: 2rem;
+	  @include mq(xl) {
+		margin-bottom: 20px;
+	  }
+	}
+  }
+  .boldh5 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 2rem;
+  }
+  .lobfami {
+	font-family: $heading-fonts;
+  }
+  
+  .contentWrap_line {
+	position: relative;
+	&:after {
+	  position: absolute;
+	  content: '';
+	  top: 0;
+	  right: -20px;
+	  width: 2px;
+	  height: 100%;
+	  background-color: $theme-dark;
+	  @include mq(xl) {
+		right: -38px;
+	  }
+	  @include mq(md) {
+		display: none;
+	  }
+	}
+  }
+  
+  .total-price {
+	max-width: 1300px;
+	margin: 40px auto 0;
+	border-top: 1px dashed $theme-dark;
+	padding-top: 40px;
+	@include mq(xl) {
+	  max-width: 1050px;
+	}
+	@include mq(lg) {
+	  max-width: 900px;
+	}
+	@include mq(md) {
+	  max-width: 700px;
+	}
+	@include mq(xs) {
+	  max-width: 500px;
+	}
+	@include mq(sm) {
+	  margin: 20px auto 0;
+	  padding-top: 20px;
+	}
+  }
+  .prices-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	@include mq(sm) {
+	  gap: 20px;
+	}
+	.prices {
+	  h3 {
+		color: $white-dark;
+		margin-bottom: 10px;
+		font-family: $heading-fonts;
+		@include mq(sm) {
+		  font-size: 24px;
+		}
+	  }
+	  p {
+		color: $white-dark;
+		font-size: 18px;
+		font-weight: 500;
+		@include mq(sm) {
+		  font-size: 16px;
+		}
+	  }
+	}
+  }
+  
